@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+<!-- quick sand -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3d4a46b0ba.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+            
+    <main>
+        
+        <form>
+                <!-- head -->
+            <div class="head">
+                <h2>Magazin</h2>
+                <h4>search for your product here</h4>
+                </div>
+                <div id="errormessage">
+                    please enter your product informations below
+                </div>
+                <!-- ==============inputs name===================== -->
+                <div class="divinputs">
+                    <label>
+                        name
+                        <input placeholder="name" class="controlepannnel" type="text" id="nameOne">
+                    </label>
+                </div>
+                <div class="u" id="result1" >
+                </div>
+                <!-- ======== inputs Marque ============ -->
+
+                <div class="divinputs">
+                    <label>
+                        marque
+                        <input placeholder="marque" class="controlepannnel" type="text" id="marqueTwo">
+                    </label>
+                </div>
+                <!-- ========== inputs price ========= -->
+
+                <div class="divinputs">
+                    <label>
+                        price
+                        <input placeholder="price DH" class="controlepannnel" type="number" id="priceThree">
+                    </label>
+                </div>
+                <!-- ========= inputs date =========== -->
+
+                <div class="divinputs">
+                    <label>
+                        date
+                        <input placeholder="date" class="controlepannnel"
+                         type="date" id="dateFour">
+                    </label>
+                </div>
+    <!-- ======== Types select options =========== -->
+<div class="typepromotion">
+    
+    <label class="labelhood" for="optionss">Type</label>
+    <select  id="optionss">
+
+        <option value="hygiène et toilette">hygiène et toilette</option>
+        <option value="soins esthétiques">soins esthétiques</option>
+        <option value="produits solaires">produits solaires</option>
+        <option value="beauté des mains et des pieds">beauté des mains et des pieds</option>
+        <option value="produits de maquillage">produits de maquillage</option>
+        <option value="entretien capillaires">entretien capillaires</option>
+        <option value="parfums">parfums</option>
+    </select>
+
+
+    
+    <!-- ================ Promotion oui non ============= -->
+
+        <div class="pros">
+
+            <div class="promotionradio">
+              <label class="labelhood" for="flexradiooui">promotion</label>
+              <div class="padding-betwen">
+                <input type="radio" name="promotion"  value="oui" id="flexradiooui" checked/>
+                <label for="flexradiooui">
+                    oui
+                </label>
+
+                <input type="radio" name="promotion"  value="non" id="flexradionon"/>
+                <label for="flexradionon">
+                    non
+                </label>
+              </div>
+           </div>
+        </div>
+</div>
+            <!-- btn -->
+                <div class="btndiv">
+                    <button id="submit">Create</button>
+                </div>
+            
+        </form>
+
+    </main>
+
+        <!-- end of form start table -->
+        <div class="alltablestuff">
+            <table>
+                <thead id="theadtopics">
+                    <tr>
+                        <td>
+                            name
+                        </td>
+                        <td>
+                            marque
+                        </td>
+                        <td>
+                            price
+                        </td>
+                        <td>
+                            date
+                        </td>
+                        <td>
+                            type
+                        </td>
+                        <td>
+                            promotion
+                        </td>
+                        <td>
+                            edit
+                        </td>
+                        <td>
+                            delete
+                        </td>
+                    </tr>
+                </tdead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+            <button id="scrollup" >scroll up</button>
+        </div>
+<!-- Pop up for make sure to delete -->
+<div id="overllay">
+
+        <div id="popup" class="card">
+            <h2>Are you shure you want to delete</h2>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing sercum Lorem ipsum dolor sit amet</p>
+            <div class="two-button">
+                <button onclick="hideback()" type="button">Cancele</button>
+                <button type="submit" id="btntodelete">delete</button>
+            </div>
+        </div>
+    </div>
+
+<!-- detetails for every product--> 
+
+
+        <div id="infosdetailes">
+<p> Here is all informations related to your product</p>
+<div id="details">
+</div>      
+            <div class="detail-button">
+                <button onclick="hidedetails()" type="button2">ok</button>
+            </div>
+        </div> 
+
+
+    
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
